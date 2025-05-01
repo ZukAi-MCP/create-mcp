@@ -81,11 +81,3 @@ You can clone and deploy any MCP server made with create-mcp to your own Cloudfl
 ```bash
 bun create mcp --clone <github-url>
 ```
-
-## Contributing
-
-Contributions and feedback are extremely welcome! Please feel free to submit a Pull Request or open an issue!
-
-## Acknowledgements
-
-This project would not be possible without [workers-mcp](https://github.com/cloudflare/workers-mcp) made by [@geelen](https://github.com/geelen)
