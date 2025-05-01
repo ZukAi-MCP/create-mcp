@@ -21,3 +21,4 @@ This is just personal preference, but I hate the DX of running MCP servers local
 ## Why Cloudflare Workers?
 
 I just love the platform. Fast deployments and the DX is fantastic if you can live with workerd instead of Node.js. I use tools like Queues and KV all the time - they've completely replaced so many SaaS products I used to pay for before I got cloudflare-pilled.
+
