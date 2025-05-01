@@ -29,12 +29,12 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zueai/create-mcp"
+		"url": "https://github.com/ZukAi-MCP/create-mcp"
 	},
 	"bugs": {
-		"url": "https://github.com/zueai/create-mcp/issues"
+		"url": "https://github.com/ZukAi-MCP/create-mcp/issues"
 	},
-	"homepage": "https://github.com/zueai/create-mcp#readme",
+	"homepage": "https://github.com/ZukAi-MCP/create-mcp#readme",
 	"dependencies": {
 		"npm-which": "^3.0.1",
 		"picocolors": "^1.0.0",
@@ -52,3 +52,4 @@
 		"wrangler": "^3.101.0"
 	}
 }
+
