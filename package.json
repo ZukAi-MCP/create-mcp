@@ -1,0 +1,54 @@
+{
+	"name": "create-mcp",
+	"version": "0.4.17",
+	"type": "module",
+	"description": "CLI tool to quickly scaffold new MCP servers",
+	"author": "zue",
+	"license": "MIT",
+	"bin": {
+		"create-mcp": "./cli.ts"
+	},
+	"files": [
+		"cli.ts",
+		"template"
+	],
+	"scripts": {
+		"dev": "bun check && wrangler dev",
+		"deploy": "workers-mcp docgen src/index.ts && bun check && wrangler deploy --minify",
+		"check": "bunx biome check --write .",
+		"bump": "npm version patch --no-git-tag-version",
+		"prepublishOnly": "bun check && npm run bump"
+	},
+	"keywords": [
+		"mcp",
+		"create-mcp",
+		"scaffold",
+		"cli",
+		"cloudflare",
+		"workers"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zueai/create-mcp"
+	},
+	"bugs": {
+		"url": "https://github.com/zueai/create-mcp/issues"
+	},
+	"homepage": "https://github.com/zueai/create-mcp#readme",
+	"dependencies": {
+		"npm-which": "^3.0.1",
+		"picocolors": "^1.0.0",
+		"prompts": "^2.4.2",
+		"workers-mcp": "^0.0.13",
+		"yargs": "^17.7.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@cloudflare/workers-types": "^4.20250109.0",
+		"@types/npm-which": "^3.0.3",
+		"@types/prompts": "^2.4.9",
+		"@types/yargs": "^17.0.32",
+		"bun-types": "latest",
+		"wrangler": "^3.101.0"
+	}
+}
